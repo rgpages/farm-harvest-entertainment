@@ -38,9 +38,45 @@
 
 	<style>
 		/*mobile-first design*/
+		.bat_head{
+			font-family: "BentonSansCond Regular", Cambria, Georgia, serif;
+			text-align: left;
+			width: 90%;
+			margin: 0 auto;
+			
+		}
+		
+		.bat_head h1{
+			margin: 0;
+			font-size: 4em;
+		}
+		
+		.bat_head p{
+			margin: 0;
+			color: #666;
+			font-size: 1.5em;
+		}
 
 		@media (min-width: 1005px) { /*desktop, greater than 1005px, desktop, wiffle C*/
-
+			.bat_head { 
+				position: absolute;
+				width: 100%;
+				/*top: 4em;*/
+				bottom: 0;
+				text-align: center;
+				background: rgba(0,0,0,.5);
+				
+			}
+			
+			.bat_head h1 { 
+				font-size: 8em;
+				color: white;
+			}
+			
+			.bat_head p{
+				color: #FF9E30;
+				margin-bottom: .5em;
+			}
 		}
 		
 		.bat_story{width:100%;max-width:800px;margin:0 auto;}
@@ -51,8 +87,6 @@
 		}
 		#arrayzzz_filter{
 			float: none;
-			width: 90%;
-			margin: 0 auto;
 		}
 		#arrayzzz_filter label input{
 			width: 100%;
@@ -79,15 +113,18 @@
 	<!-- top image -->
 	<div class="bat_paratop">
 		<figure>
-			<img src="media/images/pumpkin.JPG" width="100%" alt="pumpkins">
-			<!-- <div class="bat_head">That's agritainment</div> -->
+			<img src="media/images/pumpkin.jpg" width="100%" alt="pumpkins">
+			<div class="bat_head">
+				<h1>Agritainment</h1>
+				<p>As October nears local farms reap harvest fun for all ages</p>
+			</div>
 		</figure>
 	</div>
 
 	<!-- wrapper -->
 	<div class="bat_wrap" id="one">
-		<h1>That's agritainment</h1>
-		<h2>As October nears local farms reap harvest fun for all ages</h2>
+		<!-- <h1>That's agritainment</h1>
+		<h2>As October nears local farms reap harvest fun for all ages</h2> -->
 
 		<!-- [BEGIN] byline -->
 		<div class="pure-g bat_bydate">
@@ -219,8 +256,7 @@
 				}
 			});
 			
-			$('#arrayzzz_filter input').attr("placeholder", "search");
-			
+			$('#arrayzzz_filter input').attr("placeholder", "search").wrap("<div class='bat_wrap'></div>");
 		});
 	</script>
 	

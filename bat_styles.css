@@ -13,6 +13,17 @@ a:hover { color: #ca4700; text-decoration: underline; }
 a:active { color: #ca4700; text-decoration: underline; }
 
 /* paralax top image */
+/* so you can position absolute .bat_head */
+.bat_paratop{
+	position: relative;
+}
+
+/* gets rid of gap at bottom */
+.bat_paratop img{
+	display: block;
+	margin-bottom: 14px;
+}
+
 .bat_paratop figcaption{
 	padding: 0 1em;
 }
@@ -52,19 +63,19 @@ a:active { color: #ca4700; text-decoration: underline; }
 
 /* hammerhead head on image */
 .bat_head{
-	display:block;
+/*	display:block;
 	color:#fff;
 	position: relative;
 	bottom:4em;
 	width:100%;
-	padding:0;
+	padding:0;*/
 }
 
 /* on-image subhead */
 .bat_head p{
-	font-size:2.5em;
+/*	font-size:2.5em;
 	margin:0;
-	padding:.3em;
+	padding:.3em;*/
 }
 
 /* byline */
@@ -200,12 +211,12 @@ audio{
 
 	/* hammerhead head on image */
 	.bat_head {
-		bottom:2em;
+		/*bottom:2em;*/
 	}
 
 	/* on-image subhead */
 	.bat_head p {
-		xfont-size:5em;
+		/*font-size:5em;*/
 	}
 }
 
@@ -229,7 +240,7 @@ audio{
 
 	/* hammerhead head on image */
 	.bat_head {
-		bottom:0;
+		/*bottom:0;*/
 	}
 
 	.bat_full{
