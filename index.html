@@ -73,12 +73,37 @@
 			margin: 0 auto;
 			font-style: italic;
 		}
+		
+		.bat_module{ margin-bottom: 0; }
+
+		.bat_module.bat_parallax{
+			background-image: url("media/images/pumpkin.jpg");
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.bat_module.bat_parallax-1 {
+			height: 300px;
+		}
+
+		.bat_module.bat_parallax-2 {
+			height: 50px;
+		}
+
+		.bat_module.bat_parallax-3 {
+			height: 300px;
+		}
+
+		.bat_module.content{
+			padding: 20px 0;
+		}
 
 		@media (min-width: 1005px) { /*desktop, greater than 1005px, desktop, wiffle C*/
 			.bat_head { 
 				position: absolute;
 				width: 100%;
-				bottom: 20px;
+				bottom: 16px;
 				text-align: center;
 				background: rgba(0,0,0,.5);
 				
@@ -93,6 +118,23 @@
 				color: #FF9E30;
 				margin-bottom: .5em;
 			}
+			
+			.bat_module.bat_parallax-1 {
+				height: 800px;
+			}
+
+			.bat_module.bat_parallax-2 {
+				height: 300px;
+			}
+
+			.bat_module.bat_parallax-3 {
+				height: 800px;
+			}
+
+			.bat_module.content{
+				padding: 20px 0;
+			}
+
 		}
 		
 		.bat_story{width:100%;max-width:800px;margin:0 auto;}
@@ -105,7 +147,7 @@
 			float: none;
 		}
 		#arrayzzz_filter label input{
-			width: 90%;
+			width: 100%;
 			margin: 0;
 		}
 		
@@ -133,7 +175,7 @@
 		table.dataTable.no-footer{
 			border-bottom: 1px solid #dddddd;
 		}
-
+		
 	</style>
 
 </head>
@@ -145,11 +187,13 @@
 		<p><a href="http://registerguard.com/rg/life/weekend/">Weekend</a></p>
 	</header>
 	<!-- [END] head -->
+	
+	<div class="bat_module bat_parallax bat_parallax-1"></div>
 
 	<!-- top image -->
 	<div class="bat_paratop">
 		<figure>
-			<img src="media/images/pumpkin.jpg" width="100%" alt="pumpkins">
+			<!-- <img src="media/images/pumpkin.jpg" width="100%" alt="pumpkins"> -->
 			<figcaption>Collin Andrew/The Register-Guard</figcaption>
 			<div class="bat_head">
 				<h1>Agritainment</h1>
@@ -159,7 +203,7 @@
 	</div>
 
 	<!-- wrapper -->
-	<div class="bat_wrap" id="one">
+	<div class="bat_wrap bat_module content" id="one">
 		<!-- <h1>That's agritainment</h1>
 		<h2>As October nears local farms reap harvest fun for all ages</h2> -->
 
@@ -189,11 +233,12 @@
 			<p>Speaking of the farms, what better places than these to get your seasonal fill and feel like a kid again? Hay rides, anyone? Haunted corn mazes? Yes, please. And let’s not think for one second that we are too adult to be scared out of our wits.</p>
 			<p>Whether you’re seeking a full-fledged day-at-the-farm experience — complete with hay rides and U-pick pumpkin patches — or looking to visit a farm stand to pick up your favorite variety of apples or some fall décor, October is prime time for autumn harvest at Lane County farms. It’s a great time to celebrate the season in whatever way satisfies your inner child.</p>
 		</div> <!-- /.bat_story -->
-	
 	</div><!-- /.bat_wrap -->
-
+	
+	<!-- <div class="bat_module bat_parallax bat_parallax-2"></div> -->
+	
 	<!-- full width table -->
-	<div class="bat_full">
+	<div class="bat_full bat_module content">
 		<table id="arrayzzz" class="display responsive" width="100%">
 			<thead>
 				<tr>
@@ -210,16 +255,12 @@
 				</tr>
 			</thead>
 		</table>
-		<figure>
-			<img src="media/images/pumpkinTop.jpg" width="100%" style="margin-top: 20px">
-		</figure>
-		<figcaption>
-			From Lone Pine Farms we head to the pumpkin patch. We provide a rundown of all the harvest activities that are planned at area farmsteads. (Collin Andrew/The Register-Guard)
-		</figcaption>
 	</div><!-- /.bat_full -->
-
-	<hr style="margin:2em">
-
+	
+	<div class="bat_module bat_parallax bat_parallax-3"></div>
+	
+	<!-- <hr style="margin:2em"> -->
+	
 	<footer>
 		<div id="bd_press">
 			<p><span>The Register-Guard <span class="bat_break">•</span></span> <span><a href="http://g.co/maps/h6sgk">3500 Chad Drive</a> • Eugene, OR • 97408 <span class="bat_break">/</span></span> <span>(541) 485-1234 <span>/</span> <a href="mailto:feedback@registerguard.com">Feedback</a></span></p>
