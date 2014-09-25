@@ -61,6 +61,21 @@
             ""
         ],
         [
+            "<a href='http://gatheringtogetherfarm.com'>Gathering Together Farm</a>",
+            "25159 Grange Hall Road, Philomath OR",
+            "541-929-4270",
+            "",
+            "",
+            "",
+            "&check;",
+            "&check;",
+            "This farm stand north in Linn County is well worth a country drive what with fall produce, including winter gourds and pie pumpkins, and a restaurant open for breakfast on Saturdays 9 a.m. to 2 p.m. Weekend hours: 9 a.m. to 5 p.m. Saturdays, closed Sundays, through October.",
+            "",
+            "Gathering Together Farm",
+            "T",
+            "gatheringtogetherfarm.com"
+        ],
+        [
             "Groundwork Organics",
             "91360 River Road Eugene OR",
             "541-998-0900",
@@ -134,21 +149,6 @@
             "Lone Pine Farms",
             "PMHT",
             "http://www.lonepinefarms.com"
-        ],
-        [
-            "<a href='http://lonesome-whistle.myshopify.com'>Lonesome Whistle Farm & Cultivation Jewelry</a>",
-            "92112 River Road Junction City OR",
-            "541-234-4744",
-            "",
-            "",
-            "",
-            "&check;",
-            "",
-            "This farm grows rare and heirloom varieties of beans, grains, corn and seeds. Available for purchase at the farm stand are freshly stone-ground grains, gourmet popcorn and heirloom bean jewelry. Weekend hours: 10 a.m. to 6 p.m. Saturdays and Sundays.",
-            "",
-            "Lonesome Whistle Farm & Cultivation Jewelry",
-            "T",
-            "lonesome-whistle.myshopify.com"
         ],
         [
             "ME & Moore",

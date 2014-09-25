@@ -77,26 +77,25 @@
 		.bat_module{ margin-bottom: 0; }
 
 		.bat_module.bat_parallax{
-			background-image: url("media/images/pumpkin.jpg");
 			background-position: 50% 50%;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
 		}
 		.bat_module.bat_parallax-1 {
-			height: 300px;
+			background-image: url("media/images/pumpkin.jpg");
 		}
 
 		.bat_module.bat_parallax-2 {
-			height: 50px;
-		}
-
-		.bat_module.bat_parallax-3 {
-			height: 300px;
+			background-image: url("media/images/pumpkin2.jpg");
 		}
 
 		.bat_module.content{
 			padding: 20px 0;
+		}
+		
+		.bat_bye{
+			overflow: hidden;
 		}
 
 		@media (min-width: 1005px) { /*desktop, greater than 1005px, desktop, wiffle C*/
@@ -119,20 +118,25 @@
 				margin-bottom: .5em;
 			}
 			
+			.bat_module.bat_parallax{
+			}
+			
 			.bat_module.bat_parallax-1 {
+				background-image: url("media/images/pumpkin.jpg");
 				height: 800px;
 			}
 
 			.bat_module.bat_parallax-2 {
-				height: 300px;
-			}
-
-			.bat_module.bat_parallax-3 {
+				background-image: url("media/images/pumpkin2.jpg");
 				height: 800px;
 			}
 
 			.bat_module.content{
-				padding: 20px 0;
+				padding-bottom: 40px;
+			}
+			
+			.bat_bye{
+				display: none;
 			}
 
 		}
@@ -188,7 +192,9 @@
 	</header>
 	<!-- [END] head -->
 	
-	<div class="bat_module bat_parallax bat_parallax-1"></div>
+	<div class="bat_module bat_parallax bat_parallax-1">
+		<image class="bat_bye" src="media/images/pumpkin.jpg" width="100%">
+	</div>
 
 	<!-- top image -->
 	<div class="bat_paratop">
@@ -235,7 +241,6 @@
 		</div> <!-- /.bat_story -->
 	</div><!-- /.bat_wrap -->
 	
-	<!-- <div class="bat_module bat_parallax bat_parallax-2"></div> -->
 	
 	<!-- full width table -->
 	<div class="bat_full bat_module content">
@@ -257,7 +262,9 @@
 		</table>
 	</div><!-- /.bat_full -->
 	
-	<div class="bat_module bat_parallax bat_parallax-3"></div>
+	<div class="bat_module bat_parallax bat_parallax-2">
+		<image class="bat_bye" src="media/images/pumpkin2.jpg" width="100%">
+	</div>
 	
 	<!-- <hr style="margin:2em"> -->
 	
