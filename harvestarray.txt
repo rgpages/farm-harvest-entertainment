@@ -166,7 +166,7 @@
             ""
         ],
         [
-            "<a href='www.northernlightschristmastreefarm.com'>Northern Lights Christmas Tree Farm</a>",
+            "<a href='http://www.northernlightschristmastreefarm.com'>Northern Lights Christmas Tree Farm</a>",
             "36777 Wheeler Road Pleasant Hill OR",
             "541-746-5161",
             "&check;",
@@ -226,7 +226,7 @@
             ""
         ],
         [
-            "<a href='river-bend-farm.com'>River Bend Farms and Pleasant Hil Orchard</a>",
+            "<a href='http://river-bend-farm.com'>River Bend Farms and Pleasant Hil Orchard</a>",
             "35031 Fremont Ave. Eugene OR",
             "541-520-2561",
             "",
@@ -241,7 +241,7 @@
             "river-bend-farm.com"
         ],
         [
-            "<a href='www.shadyoaksplantsandproduce.com'>Shady Oaks Plants & Produce</a>",
+            "<a href='http://www.shadyoaksplantsandproduce.com'>Shady Oaks Plants & Produce</a>",
             "77380 Highway 99 Cottage Grove OR",
             "541-942-5004",
             "&check;",
@@ -256,7 +256,7 @@
             "http://www.shadyoaksplantsandproduce.com"
         ],
         [
-            "<a href='www.thistledownfarms.net'>Thistledown Farm</a>",
+            "<a href='http://www.thistledownfarms.net'>Thistledown Farm</a>",
             "91455 River Road Eugene OR",
             "541-689-2019",
             "&check;",
