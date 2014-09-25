@@ -21,7 +21,7 @@ a:active { color: #ca4700; text-decoration: underline; }
 /* gets rid of gap at bottom */
 .bat_paratop img{
 	display: block;
-	margin-bottom: 14px;
+	margin-bottom: 5px;
 }
 
 .bat_paratop figcaption{
