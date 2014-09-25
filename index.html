@@ -129,6 +129,10 @@
 			max-width: 600px;
 			margin: 0 auto;
 		}
+		
+		table.dataTable.no-footer{
+			border-bottom: 1px solid #dddddd;
+		}
 
 	</style>
 
@@ -162,7 +166,7 @@
 		<!-- [BEGIN] byline -->
 		<div class="pure-g bat_bydate">
 			<div class="pure-u-1 pure-u-md-1-2 bat_byline">
-				By <a href="mailto:christine.sherk@registerguard.com">Christine Sherk</a></a><span id="bat_byline_break"> | </span>The Register-Guard
+				By <a href="mailto:christine.sherk@registerguard.com">Christine Sherk</a></a><span class="bat_break"> | </span>The Register-Guard
 			</div><!-- /.pure-u-1 /.pure-u-md-1-2 /.bat_byline -->
 			<div class="pure-u-1 pure-u-md-1-2 bat_date">
 				Sept. 27, 2014
@@ -218,8 +222,8 @@
 
 	<footer>
 		<div id="bd_press">
-			<p><span>The Register-Guard <span>•</span></span> <span><a href="http://g.co/maps/h6sgk">3500 Chad Drive</a> • Eugene, OR • 97408 <span>/</span></span> <span>(541) 485-1234 <span>/</span> <a href="mailto:feedback@registerguard.com">Feedback</a></span></p>
-			<p><span>Copyright © 1996–2014 <span>/</span></span> <span><a href="http://projects.registerguard.com/pages/terms-of-use/">Terms</a> <span>/</span> <a href="http://projects.registerguard.com/pages/privacy-statement/">Privacy</a> <span>/</span> <a href="http://projects.registerguard.com/pages/copyright/">Copyright</a></span></p>
+			<p><span>The Register-Guard <span class="bat_break">•</span></span> <span><a href="http://g.co/maps/h6sgk">3500 Chad Drive</a> • Eugene, OR • 97408 <span class="bat_break">/</span></span> <span>(541) 485-1234 <span>/</span> <a href="mailto:feedback@registerguard.com">Feedback</a></span></p>
+			<p><span>Copyright © 1996–2014 <span class="bat_break">/</span></span> <span><a href="http://projects.registerguard.com/pages/terms-of-use/">Terms</a> <span>/</span> <a href="http://projects.registerguard.com/pages/privacy-statement/">Privacy</a> <span>/</span> <a href="http://projects.registerguard.com/pages/copyright/">Copyright</a></span></p>
 		</div>
 	</footer>
 
@@ -310,7 +314,7 @@
 				}]
 			});
 			
-			$('#arrayzzz_filter input').attr("placeholder", "Search... (hayride, maze, cider)").wrap("<div class='bat_wrap'></div>");
+			$('#arrayzzz_filter input').attr("placeholder", "Search... (hayride, maze, cider)").wrap("<div class='bat_wrap pure-form'></div>").addClass("pure-input-rounded");
 		});
 	</script>
 	
@@ -327,7 +331,7 @@
 
 		// break byline to two lines so that "| The Register-Guard" doesn't break with multiple authors
 		if ($(window).width() <= 1005){
-			$("#bat_byline_break").replaceWith("<br>");
+			$(".bat_break").replaceWith("<br>");
 		}
 
 		// smooth scrolling on an in-page link
