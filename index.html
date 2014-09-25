@@ -37,6 +37,16 @@
 	<meta name="msvalidate.01" content="608AEB9B4D0BDA128921F2615DCC1FCE">
 
 	<style>
+		
+		/* link goodness */
+		a:link { color: #EC7E00; text-decoration: none; }
+
+		a:visited { color: #B46000; text-decoration: none; }
+
+		a:hover { color: #ca4700; text-decoration: underline; }
+
+		a:active { color: #ca4700; text-decoration: underline; }
+		
 		/*mobile-first design*/
 		.bat_head{
 			font-family: "BentonSansCond Regular", Arial, sans-serif;
@@ -55,6 +65,12 @@
 			margin: 0;
 			color: #666;
 			font-size: 1.5em;
+		}
+		
+		.bat_smalltext{
+			width: 80%;
+			margin: 0 auto;
+			font-style: italic;
 		}
 
 		@media (min-width: 1005px) { /*desktop, greater than 1005px, desktop, wiffle C*/
@@ -93,9 +109,25 @@
 			margin: 0;
 		}
 		
-		#arrayzzz_wrapper td:first-child:before{
-			top: 33%;
-			line-height: 16px;
+		#arrayzzz_wrapper td.control:before{
+			left: 0;
+			height: auto;
+			width: 100%;
+			margin: 0;
+			position: relative;
+			color: black;
+			border: none;
+			line-height: auto;
+			box-shadow: none;
+			content: 'Expand';
+			background-color: rgba(0,0,0,0);
+			text-decoration: underline;
+		}
+		
+		#arrayzzz_wrapper .child li{
+			text-align: left;
+			max-width: 600px;
+			margin: 0 auto;
 		}
 
 	</style>
@@ -144,9 +176,11 @@
 		<!-- story -->
 		<div class="bat_story">
 			<p class="bat_dropcap">October is the month every year in which adults can act like children and happily get away with it thanks to the steady march toward that perennial holiday favorite, Halloween.</p>
-			<p>It’s OK to dress up in costume — complete with those false teeth and feather boa you’ve been saving — and throw a ghoulish party. (Halloween is on a Friday this year. We’re just saying.)</p>
-			<p>It’s OK to fill up on caramel apples, pumpkin pie, kettle corn and apple cider, especially the freshly pressed kind. Oh, and apple cider doughnuts.</p>
-			<p>It’s OK to buy more pumpkins to carve than you’ll ever need because the local farms have patches and patches of them ripe for the picking.</p>
+			<div class="bat_smalltext">
+				<p>It’s OK to dress up in costume — complete with those false teeth and feather boa you’ve been saving — and throw a ghoulish party. (Halloween is on a Friday this year. We’re just saying.)</p>
+				<p>It’s OK to fill up on caramel apples, pumpkin pie, kettle corn and apple cider, especially the freshly pressed kind. Oh, and apple cider doughnuts.</p>
+				<p>It’s OK to buy more pumpkins to carve than you’ll ever need because the local farms have patches and patches of them ripe for the picking.</p>
+			</div><!-- /.bat_inset -->
 			<p>Speaking of the farms, what better places than these to get your seasonal fill and feel like a kid again? Hay rides, anyone? Haunted corn mazes? Yes, please. And let’s not think for one second that we are too adult to be scared out of our wits.</p>
 			<p>Whether you’re seeking a full-fledged day-at-the-farm experience — complete with hay rides and U-pick pumpkin patches — or looking to visit a farm stand to pick up your favorite variety of apples or some fall décor, October is prime time for autumn harvest at Lane County farms. It’s a great time to celebrate the season in whatever way satisfies your inner child.</p>
 		</div> <!-- /.bat_story -->
@@ -158,14 +192,16 @@
 		<table id="arrayzzz" class="display responsive" width="100%">
 			<thead>
 				<tr>
-					<th>Farm</th>
-					<th>Address</th>
-					<th>Phone</th>
-					<th>U-pick pumpkins</th>
-					<th>Mazes & events</th>
-					<th>Rides</th>
-					<th>Seasonal treats</th>
-					<th>Fall d&eacute;cor</th>
+					<th class="all">Farm</th>
+					<th class="none">Address</th>
+					<th class="none">Phone</th>
+					<th class="min-tablet-l">U-pick pumpkins</th>
+					<th class="min-tablet-l">Mazes & events</th>
+					<th class="min-tablet-l">Rides</th>
+					<th class="min-tablet-l">Seasonal treats</th>
+					<th class="min-tablet-l">Fall d&eacute;cor</th>
+					<th class="none">Description</th>
+					<th class="all">More info</th>
 				</tr>
 			</thead>
 		</table>
@@ -248,12 +284,23 @@
 	<script>
 		$(document).ready(function() {
 			$('#arrayzzz').dataTable( {
-				"ajax": 'arrayzzz.txt',
+				"ajax": 'harvestarray.txt',
 				"paging": false,
 				"info": false,
 				"oLanguage": {
 					"sSearch": ""
-				}
+				},
+				"responsive": {
+					"details": {
+						"type": 'column',
+						"target": 9
+					}
+				},
+				"columnDefs": [ {
+					"className": 'control',
+					"orderable": false,
+					"targets": 9
+				}]
 			});
 			
 			$('#arrayzzz_filter input').attr("placeholder", "search").wrap("<div class='bat_wrap'></div>");
