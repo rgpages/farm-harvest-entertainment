@@ -95,6 +95,8 @@
 				margin-bottom: .5em;
 			}
 			
+			/* Parallax CSS */
+			/* See: http://callmenick.com/2014/07/15/simple-parallax-scrolling-effect/ */
 			.bat_module.bat_parallax{
 				background-position: 50% 50%;
 				background-repeat: no-repeat;
@@ -122,8 +124,10 @@
 
 		}
 		
+		/* Center story */
 		.bat_story{width:100%;max-width:800px;margin:0 auto;}
 		
+		/* DataTables array */
 		#arrayzzz{
 			text-align: center;
 			font-family: Arial, sans-serif;
@@ -180,27 +184,22 @@
 	<!-- top image -->
 	<div class="bat_paratop">
 		<figure>
-			<!-- <img src="media/images/pumpkin.jpg" width="100%" alt="pumpkins"> -->
-			<!-- <figcaption>Collin Andrew/The Register-Guard</figcaption> -->
 			<div class="bat_head">
 				<h1>Agritainment</h1>
 				<p>As October nears local farms reap harvest fun for all ages</p>
-			</div>
+			</div><!-- /.bat_head -->
 		</figure>
-	</div>
+	</div><!-- /.bat_paratop -->
 
 	<!-- wrapper -->
-	<div class="bat_wrap bat_module content" id="one">
-		<!-- <h1>That's agritainment</h1>
-		<h2>As October nears local farms reap harvest fun for all ages</h2> -->
-
+	<div class="bat_wrap bat_module content">
 		<!-- [BEGIN] byline -->
 		<div class="pure-g bat_bydate">
 			<div class="pure-u-1 pure-u-md-3-4 bat_byline">
 				By <a href="mailto:christine.sherk@registerguard.com">Christine Sherk</a></a><span class="bat_break"> | </span>Photo by Collin Andrew<span class="bat_break"> | </span>The Register-Guard
 			</div><!-- /.pure-u-1 /.pure-u-md-1-2 /.bat_byline -->
 			<div class="pure-u-1 pure-u-md-1-4 bat_date">
-				Sept. 27, 2014
+				Sept. 26, 2014
 			</div><!-- /.pure-u-1 /.pur-u-md-1-2 /.bat_date -->
 		</div><!-- /.pure-g /.bat_bydate -->
 		<!-- [END] byline -->
@@ -215,7 +214,7 @@
 			<div class="bat_smalltext">
 				<p>It’s OK to fill up on caramel apples, pumpkin pie, kettle corn and apple cider, especially the freshly pressed kind. Oh, and apple cider doughnuts.</p>
 				<p>It’s OK to buy more pumpkins to carve than you’ll ever need because the local farms have patches and patches of them ripe for the picking.</p>
-			</div><!-- /.bat_inset -->
+			</div><!-- /.bat_smalltext -->
 			<p>Speaking of the farms, what better places than these to get your seasonal fill and feel like a kid again? Hay rides, anyone? Haunted corn mazes? Yes, please. And let’s not think for one second that we are too adult to be scared out of our wits.</p>
 			<p>Whether you’re seeking a full-fledged day-at-the-farm experience — complete with hay rides and U-pick pumpkin patches — or looking to visit a farm stand to pick up your favorite variety of apples or some fall décor, October is prime time for autumn harvest at Lane County farms. It’s a great time to celebrate the season in whatever way satisfies your inner child.</p>
 		</div> <!-- /.bat_story -->
@@ -246,8 +245,6 @@
 		<image class="bat_bye" src="media/images/pumpkin2.jpg" width="100%">
 	</div>
 	
-	<!-- <hr style="margin:2em"> -->
-	
 	<footer>
 		<div id="bd_press">
 			<p><span>The Register-Guard <span class="bat_break">•</span></span> <span><a href="http://g.co/maps/h6sgk">3500 Chad Drive</a> • Eugene, OR • 97408 <span class="bat_break">/</span></span> <span>(541) 485-1234 <span>/</span> <a href="mailto:feedback@registerguard.com">Feedback</a></span></p>
@@ -261,57 +258,7 @@
 	<!-- [BEGIN] Addthis -->
 	<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=registerguard"></script>
 	<!-- [END] Addthis -->
-
-	<!-- [BEGIN] comScore -->
-	<script>
-		var _comscore=_comscore||[];
-		_comscore.push({c1:'2',c2:'14055685'});
-		(function(){
-				var s=document.createElement('script'),
-				el=document.getElementsByTagName('script')[0];
-				s.async=true;
-				s.src=(document.location.protocol=='https:'?'https://sb':'http://b')+'.scorecardresearch.com/beacon.js';
-				el.parentNode.insertBefore(s,el);
-			})();
-	</script>
-	<noscript>
-	<img src="//b.scorecardresearch.com/p?c1=2&amp;c2=14055685&amp;cv=2.0&amp;cj=1" width="1" height="1" alt=""></noscript>
-	<!-- [END] comScore -->
-
-	<!-- [BEGIN] Quantcast -->
-	<script>
-		var _qevents=_qevents||[];
-		(function(){
-			var elem=document.createElement('script');
-			elem.src=(document.location.protocol=='https:'?'https://secure':'http://edge')+'.quantserve.com/quant.js';
-			elem.async=true;elem.type='text/javascript';
-			var scpt=document.getElementsByTagName('script')[0];
-			scpt.parentNode.insertBefore(elem,scpt);
-			})();
-		_qevents.push({qacct:'p-a2gE_aSO6ndbI'});
-	</script>
-	<noscript>
-	<img src="//pixel.quantserve.com/pixel/p-a2gE_aSO6ndbI.gif" width="1" height="1" alt=""></noscript>
-	<!-- [END] Quantcast -->
-
-	<!-- [BEGIN] Analytics -->
-	<script>
-		(function(r,g,n,e,w,s){
-			r.GoogleAnalyticsObject=e;
-			r[e]||(r[e]=function(){(r[e].q=r[e].q||[]).push(arguments)});
-			r[e].l=+new Date;
-			w=g.createElement(n);
-			s=g.getElementsByTagName(n)[0];
-			w.src='//www.google-analytics.com/analytics.js';
-			s.parentNode.insertBefore(w,s)}(
-				window,document,'script','ga'));
-		ga('create','UA-882065-1','registerguard.com');
-		ga('require','displayfeatures');
-		ga('require','linkid','linkid.js');
-		ga('send','pageview');
-	</script>
-	<!-- [END] Analytics -->
-
+	
 	<!-- jquery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	
@@ -378,5 +325,55 @@
 			});
 		});
 	</script>
-
+	
+	<!-- [BEGIN] comScore -->
+	<script>
+		var _comscore=_comscore||[];
+		_comscore.push({c1:'2',c2:'14055685'});
+		(function(){
+				var s=document.createElement('script'),
+				el=document.getElementsByTagName('script')[0];
+				s.async=true;
+				s.src=(document.location.protocol=='https:'?'https://sb':'http://b')+'.scorecardresearch.com/beacon.js';
+				el.parentNode.insertBefore(s,el);
+			})();
+	</script>
+	<noscript>
+	<img src="//b.scorecardresearch.com/p?c1=2&amp;c2=14055685&amp;cv=2.0&amp;cj=1" width="1" height="1" alt=""></noscript>
+	<!-- [END] comScore -->
+	
+	<!-- [BEGIN] Quantcast -->
+	<script>
+		var _qevents=_qevents||[];
+		(function(){
+			var elem=document.createElement('script');
+			elem.src=(document.location.protocol=='https:'?'https://secure':'http://edge')+'.quantserve.com/quant.js';
+			elem.async=true;elem.type='text/javascript';
+			var scpt=document.getElementsByTagName('script')[0];
+			scpt.parentNode.insertBefore(elem,scpt);
+			})();
+		_qevents.push({qacct:'p-a2gE_aSO6ndbI'});
+	</script>
+	<noscript>
+	<img src="//pixel.quantserve.com/pixel/p-a2gE_aSO6ndbI.gif" width="1" height="1" alt=""></noscript>
+	<!-- [END] Quantcast -->
+	
+	<!-- [BEGIN] Analytics -->
+	<script>
+		(function(r,g,n,e,w,s){
+			r.GoogleAnalyticsObject=e;
+			r[e]||(r[e]=function(){(r[e].q=r[e].q||[]).push(arguments)});
+			r[e].l=+new Date;
+			w=g.createElement(n);
+			s=g.getElementsByTagName(n)[0];
+			w.src='//www.google-analytics.com/analytics.js';
+			s.parentNode.insertBefore(w,s)}(
+				window,document,'script','ga'));
+		ga('create','UA-882065-1','registerguard.com');
+		ga('require','displayfeatures');
+		ga('require','linkid','linkid.js');
+		ga('send','pageview');
+	</script>
+	<!-- [END] Analytics -->
+	
 </body>
