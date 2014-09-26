@@ -143,7 +143,7 @@
             "&check;",
             "&check;",
             "&check;",
-            "",
+            "&check;",
             "Offers a trove of seasonal produce and tasty treats, Lone Pine Farms has many seasonal activities guaranteed to fill several hours of a beautiful autumn day — or in some cases, evening. Attractions including the Pumpkin Patch Express, with transport to the U-pick pumpkin patches via either tractor-drawn wagon ($5 for ages 1 and older) or draft-horse drawn wagon (weekends only and weather permitting, $4 for ages 1 and older); the Cowtrain Trail with rides over the grassy knolls ($4.50 for ages 3 and older); and the Corn Maze, with both a non-haunted version for the daytime (10 a.m. to 5 p.m. daily; $5 ages 11 and younger, $7 ages 12 and older) and a haunted version weekend nights only (7 p.m. to 10 p.m.; $18 Friday and Saturday, $15 Sunday), with a special haunting planned on Friday, Oct. 31. The Barnyard Cafe (weekends only) serves seasonal treats such as caramel apples, pumpkin spice, apple cider donuts, hot apple cider and more. Weekend hours: 9 a.m. to 7 p.m. Saturdays and Sundays, through Oct. 31, unless otherwise noted.",
             "",
             "Lone Pine Farms",
